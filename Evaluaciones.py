@@ -13,7 +13,7 @@ for i in range(int(cantidad_notas)):
 
 print("Nota mayor:", max(lista_notas)) #indica la nota mayor de la lista
 print("Nota menor:", min(lista_notas)) #indica la nota menos de la lista
-print("Promedio de notas:", sum(lista_notas) / len(lista_notas)) #sacar el promedio de las notas
+print("Promedio de notas:", f"{sum(lista_notas) / len(lista_notas):.2f}") #sacar el promedio de las notas
 
 for i in range(len(lista_notas)): #revisa cada nota de la lista una a una
     if lista_notas[i] < 3.0:  #busca que la nota sea menos a 3.0
@@ -21,5 +21,5 @@ for i in range(len(lista_notas)): #revisa cada nota de la lista una a una
 
 #indica la nota mayor, menor, promedio y cantidad de notas actualizadas
 print("Notas actualizadas:", lista_notas)
-print("Promedio de notas actualizado:", sum(lista_notas) / len(lista_notas))
+print("Promedio de notas actualizado:", f"{sum(lista_notas) / len(lista_notas):.2f}")
 print("Cantidad de notas actualizadas:", len(lista_notas))
